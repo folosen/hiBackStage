@@ -1,0 +1,81 @@
+/**default**/
+.blue{
+    color:#4fb7c7;
+}
+
+.red{
+    color:#ff3333;
+}
+.blue-bg{
+    background-color:#4fb7c7;
+}
+.red-bg{
+    background-color:#ffa7a7;
+}
+.td-blue{
+    background-color:#a6fff6;
+}
+.td-red{
+    background-color:#ffa7a7;
+}
+.form-control{
+    width:194px;
+}
+.rest-price div input{
+    border: none;
+}
+/**header**/
+header{
+    height:98px;
+    width:100%;
+    background-color:#333333; 
+    color:#fff;
+    line-height: 98px;
+    font-size:35px;
+}
+.h-icon{
+    width:111px;
+    height:33px;
+    float:left;
+    margin-left:45px;
+    margin-top:32.5px;
+    margin-right:20px;
+    background-image: url(../img/hicon.png);
+}
+.def-color{
+    color:#4fb7c7;
+    border-color: #4fb7c7;
+}
+.def-link{
+    color:#4fb7c7;
+    border: 0px;
+    height:14px;
+    line-height: 14px;
+}
+/** footer **/
+.footer{
+    width:1120px;
+    height:45px;
+    margin: auto;
+    text-align: right;
+    margin-top:15px;
+}
+.footer span{
+    padding:4px 6px;
+    margin-left:9px;
+    font-size: 14px;
+}
+.footer .sel-now{
+    background-color: #f0f0f0;
+}
+.footer .btn-link{
+    color:black;
+    cursor: pointer;
+}
+.footer button{
+    background-color: #fff;
+    padding:5px 10px;
+    border:1px solid #dddddd;
+    font-size:14px;
+    line-height: 14px;
+}

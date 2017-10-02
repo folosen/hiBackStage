@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.min.css">    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">   
+    <link rel="stylesheet" href="css/roomStatusManagement.css">
+    <title>roomStatusManage</title>
+</head>
+<body>
+    <header>
+        <a class="h-icon" href="#"></a>
+        <div class="hand-nav"> 
+            <p class="user-bar">             
+                <button class="user-end">退出</button>
+                <button class="user-set">修改密码</button>
+                <button class="user"><i class="fa fa-user"></i>管理员2145</button>
+            </p>
+            <ul class="nav nav-pills user-nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">酒店管理</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        商品管理<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">房间管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">餐厅管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">卡权益管理</a></li>                        
+                        <li class="divider"></li>
+                        <li><a href="#">限时抢购管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">酒吧管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">大堂吧管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">SPA管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">健身房管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">游泳池管理</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        价格维护 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">房间价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">餐厅价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">卡权益价格维护</a></li>                        
+                        <li class="divider"></li>
+                        <li><a href="#">限时抢购价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">酒吧价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">大堂吧价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">SPA价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">健身房价格维护</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">游泳池价格维护</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">房态管理</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        订单管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">退款订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">房间订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">餐厅订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">卡权益订单</a></li>                        
+                        <li class="divider"></li>
+                        <li><a href="#">限时抢购订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">酒吧订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">大堂吧订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">SPA订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">健身房订单</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">游泳池订单</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">口碑管理</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        合作管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">代金券合作</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">银行优惠合作</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">生活分期合作</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        账户管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">账户管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">转本公司银行账户</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">转其他公司嗨生活账户</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">转其他公司银行账户</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">转个人银行卡</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">转个人嗨生活账户</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        对账管理 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">对账管理</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">差错管理</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">权限管理</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="content-box">
+        <div class="content-nav">
+            <ol class="breadcrumb content-left">
+                <li class="active">房态管理</li>
+            </ol>
+        </div>
+        <div class="content-sel">
+            <form class="form-horizontal" role="form">
+                <div class="sel-text">
+                    <label for="hotName">酒店名称</label>
+                    <input type="text" class="form-control" id="hotelName" placeholder="请输入酒店名称">
+                </div>
+                <button type="submit" class="btn btn-default sel-btn">搜索</button>
+                <div class="text-right">
+                    <p>房量示例：剩余数量/可售数量（<span class="blue">蓝色</span>数字为可售，<span class="red">红色</span>数字为不可售）</p>
+                </div>
+            </form>
+        </div>
+        <div class="roomStatus-sel">
+            <form class="form-horizontal" role="form">
+                <div class="control-group">
+                    <label class="control-label">起始日期</label>
+                    <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                        <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                    </div>
+                    <input type="hidden" id="sel-date" value="" />                        
+                </div>
+            </form>
+            <button class="btn btn-date">前15天</button>
+            <button class="btn btn-date">后15天</button>
+            <div class="tips-right">
+                <p><span class="blue-bg"></span>开房<span class="red-bg"></span>关房</p>
+            </div>
+        </div>
+        <div class="sel-box">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                    <th class="first"><b>日期</b><em>房间名称</em></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>含亲子套餐+SPA</td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td class="td-blue"><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td class="td-red"><span class="btn btn-link red">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                    <tr>
+                        <td>大床房</td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">6</span>/<span>15</span></td>
+                        <td><span class="btn btn-link">批量修改</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="date-box">
+            <div class="set-overlay"></div>
+            <div class="rest-price">
+                <h4>批量修改<i class="fa fa-close rest-close"></i></h4>
+                    <form action="" class="form-horizontal"></form>
+                        <div class="control-group">
+                           <p>开关房管理</p>
+                           <div class="close-open">
+                                <div class="radio radio-info ">
+                                    <input type="radio" id="all-open" value="open" name="rest-all" checked="checked">
+                                    <label for="all-open">开房</label>
+                                </div>
+                                <div class="radio radio-info">
+                                    <input type="radio" id="all-only" value="close" name="rest-all">
+                                    <label for="all-only">关房</label>
+                                </div>
+                            </div>                     
+                        </div>
+                        <div class="control-group">
+                                <p>可售数量管理</p>
+                                <div class="close-open">
+                                    房间可售数量<i class="fa fa-minus-circle"></i><em>5</em><i class="fa fa-plus-circle"></i>
+                                 </div>                     
+                             </div>
+                       <div class="control-group">
+                           <label class="control-label">起止时间设定：</label>
+                           <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="start-date" data-link-format="yyyy-mm-dd">
+                                <input size="16" class="form-control" id="start-input" type="text" value="" readonly><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                            </div>
+                            <input type="hidden" id="start-date" value="" />至
+                            <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="end-date" data-link-format="yyyy-mm-dd">
+                                <input size="16" class="form-control" id="end-input" type="text" value="" readonly><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                            </div>
+                            <input type="hidden" id="end-date"  value="" /><br/>                            
+                        </div>
+                        <div class="control-rest">
+                        <button class="btn btn-default def-color rest-no rest-ok">取消</button>
+                        <button class="btn btn-default def-color rest-ok rest-ok-all">确定</button>
+                    </div>                       
+                </form>
+            </div>
+            <div class="rest-price rest-only">
+                <h4>单个修改<i class="fa fa-close rest-close"></i></h4>
+                    <form action="" class="form-horizontal"></form>
+                        <div class="control-group">
+                           <p>开关房管理</p>
+                           <div class="close-open">
+                                <div class="radio radio-info ">
+                                    <input type="radio" id="only-open" value="open" name="rest-only" checked="checked">
+                                    <label for="only-open">开房</label>
+                                </div>
+                                <div class="radio radio-info">
+                                    <input type="radio" id="only-close" value="close" name="rest-only">
+                                    <label for="only-close">关房</label>
+                                </div>
+                            </div>                     
+                        </div>
+                        <div class="control-group">
+                                <p>可售数量管理</p>
+                                <div class="close-open">
+                                    房间可售数量<i class="fa fa-minus-circle"></i><em>5</em><i class="fa fa-plus-circle"></i>
+                                 </div>                     
+                             </div>
+                        <div class="control-rest">
+                        <button class="btn btn-default def-color rest-no rest-ok">取消</button>
+                        <button class="btn btn-default def-color rest-ok">确定</button>
+                    </div>                       
+                </form>
+            </div>   
+        </div>
+    </div>    
+    <footer>
+        <div class="footer">
+            <span>记录数：6</span>
+            <span><button class="btn btn-mini">上一步</button></span>
+            <span class="btn-link sel-now">1</span>
+            <span class="btn-link">2</span>
+            <span class="btn-link">3</span>
+            <span class="btn-link">4</span>
+            <span class="btn-link">5</span>
+            <span class="btn-link">6</span>
+            <span class="btn-link">7</span>
+            <span>...</span>
+            <span class="btn-link">86</span>
+            <span><button class="btn btn-mini">下一步</button></span>
+        </div>
+    </footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="js/roomStatusManagement.js"></script>
+</body>
+</html>
