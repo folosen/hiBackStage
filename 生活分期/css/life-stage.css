@@ -1,0 +1,10 @@
+#content-box .centent-box .centent-box-hander{
+    height:35px;
+    width:100%;
+    margin-left:15px;
+    line-height: 35px;
+    font-size: 16px;
+}
+#centent-box .centent-box{
+    height:auto;
+}
