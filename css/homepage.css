@@ -1,0 +1,21 @@
+#content-box .centent-box div{
+    display: inline-block;
+    float:left;
+    width:160px;
+    height:98px;
+    box-sizing: border-box;
+    border:1px solid black;
+    border-radius: 5px;
+    vertical-align: center;
+    font-size:16px;
+    text-align: center;
+    padding-top:35px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #A6A6A6;
+}
+#content-box .centent-box{
+    padding-left:250px;
+    padding-top:20px;
+}

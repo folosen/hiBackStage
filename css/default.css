@@ -1,4 +1,7 @@
 /**default**/
+body,html{
+    height:100%;
+}
 body{
     font-family:"微软雅黑", Arial, Helvetica, sans-serif;
 }
@@ -40,7 +43,7 @@ header{
     width:111px;
     height:33px;
     float:left;
-    margin-left:45px;
+    margin-left:25px;
     margin-top:32.5px;
     margin-right:20px;
     background-image: url(../img/hicon.png);
@@ -54,6 +57,103 @@ header{
     border: 0px;
     height:14px;
     line-height: 14px;
+}
+.hand-nav{
+    width:500px;
+    height:98px;
+    float: right;
+}
+.hand-nav p{
+    height:49px;
+    width:100%;
+    margin:0px;
+    margin-top:28px;
+}
+.hand-nav .user-bar button{
+    background-color:transparent;
+    padding:5px 15px;
+    border:0px;
+    font-size:18px;
+    color:#4fb7c7;
+    float:right;
+    line-height: 18px;
+    margin-top:9.5px;
+}
+.hand-nav .user-bar .user{
+    color:#fff;
+    margin-right:60px;
+}
+.hand-nav .user-bar .user-end{
+    margin-right:25px;
+}
+.hand-nav .user-nav{
+    color:#fff;
+    float:right;
+    height:49px;
+    font-size:16px;
+    margin-right:29px;
+}
+/** section-nav **/
+#content-box{
+    width:100%;
+    height:100%;
+    margin-top:-98px;
+    padding-top:98px;
+}
+#content-box .section-nav{
+    width:190px;
+    min-height: 700px;
+    max-height: 100%;
+    background-color: #4a5254;
+    color:#fff;
+    display: inline-block;
+    position: absolute;
+    top:98px;
+    left: 0px;
+}
+#content-box .section-nav .navbar-nav{
+    width: 140px;
+    margin:25px;
+}
+#content-box .section-nav .navbar-nav > li{
+    float: none;
+    text-align: left;
+    width: 100%;
+}
+#content-box .section-nav .navbar-nav > li>a{
+    padding-left:0px;
+    font-size: 16px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#content-box .section-nav .navbar-nav>.divider{
+    height: 1px;
+    background-color: #fff;
+}
+#content-box .section-nav .navbar-nav > li > .dropdown-menu{
+    margin-top: -40px;
+    margin-left: 140px;
+    font-size:16px;
+}
+#content-box .section-nav a{
+
+}
+#content-box .section-nav .dropdown-menu a{
+
+}
+
+#content-box .centent-hander-nav{
+    display: inline-block;
+    width:100%;
+    height:35px;
+    border-bottom: 1px dashed black;
+    padding-left:220px;
+    font-size:16px;
+    line-height: 35px;
+}
+#content-box .centent-box{
+    width:100%;
+    padding-left:190px;
 }
 /** footer **/
 .footer{
