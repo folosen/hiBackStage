@@ -5,6 +5,23 @@
     line-height: 35px;
     font-size: 16px;
 }
+#content-box .centent-box .centent-box-hander form{
+    display: inline-block;
+    height:35px;
+}
+#content-box .centent-box .centent-box-hander form div{
+    display: inline-block;
+}
+#content-box .centent-box .centent-box-hander .control-group{
+    height: 35px;
+}
+#content-box .centent-box .centent-box-hander .form-horizontal .control-label{
+    padding: 0px;
+}
+#content-box .centent-box .centent-box-hander .form-horizontal .add-on{
+    margin-left:-12px;
+    color:#4fb7c7;
+}
 #centent-box .centent-box{
     height:auto;
 }
