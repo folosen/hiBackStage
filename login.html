@@ -18,11 +18,40 @@
     </header>
     <div id="content-box">
         <div class="login-box">
-
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                    <input type="text" class="form-control" id="acn" placeholder="请输入登陆账号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                    <input type="text" class="form-control" id="pwd" placeholder="请输入登陆密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10">
+                        <input type="text" class="form-control" id="vfCode" placeholder="请输入验证码"><span class="vf-img"></span><span class="vf-btn btn btn-link">刷新</span>
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                    <button id="login-btn" type="submit" class="btn btn-default">立即登陆</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox">自动登陆
+                        </label>
+                    </div>
+                    </div>
+                </div>                
+            </form>
         </div>
     </div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/roomStatusManagement.js"></script>
 </body>
 </html>

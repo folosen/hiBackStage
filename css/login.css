@@ -3,5 +3,62 @@
     width: 100%;
 }
 #content-box .login-box{
-    
+    width:430px;
+    height:340px;
+    border-radius: 20px;
+    margin: 110px auto;
+    background: -moz-linear-gradient(top, #019DD9 0%, #CBCCCC 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#019DD9), color-stop(100%,#CBCCCC));
+    background: -webkit-linear-gradient(top, #019DD9 0%,#CBCCCC 100%);
+    background: -o-linear-gradient(top, #019DD9 0%,#CBCCCC 100%);
+    background: -ms-linear-gradient(top, #019DD9 0%,#CBCCCC 100%);
+    background: linear-gradient(to bottom, #019DD9 0%,#CBCCCC 100%);
+}
+.form-control{
+    margin:0px;
+    width:240px;
+    line-height: 38px;
+    height:38px;
+    font-size:16px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.col-sm-offset-3{
+    margin-left:95px;
+}
+.form-horizontal{
+    padding-top:40px;
+}
+#login-btn{
+    width:240px;
+    background-color: #009DDA;
+    border:#009DDA;
+    color:#fff;
+    font-size:15px;
+    font-weight: bold;
+    height: 38px;
+}
+#vfCode{
+    width:135px;
+    float:left;
+    margin-right: 25px;
+}
+.vf-img{
+    display: inline-block;
+    width:79px;
+    height:38px;
+    float:left;
+    border-radius: 5px;
+    background-image: url(../img/vf.png);
+}
+.vf-btn{
+    padding:0px;
+    padding-top:20px;
+    padding-left: 5px;
+    color:#fff;
+}
+.form-horizontal .checkbox{
+    padding:0px;
+    color:#2188D0;
 }
