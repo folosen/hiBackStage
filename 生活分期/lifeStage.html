@@ -76,20 +76,173 @@
         </div>
         <div class="centent-box">
             <div class="centent-box-hander">
-                银行名称：交通银行
+                <label>银行名称：</label>交通银行
                 <form class="form-horizontal" role="form">
-                     <div class="control-group">
+                    <div class="control-group">
                         <label for="hotName">银行供应商名称：</label>
-                        <input type="text" class="form-control" id="hotelName" placeholder="请输入酒店名称">                    
+                        <input type="text" class="form-control" id="hotelName" placeholder="">                    
                     </div>
                     <div class="control-group">
                         <label class="control-label">起始日期</label>
                         <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
                             <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
                         </div>
-                        <input type="hidden" id="sel-date" value="" />                        
+                        <input type="hidden" id="sel-date" value="" />
+                        ~
+                        <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                            <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                        </div>
+                        <input type="hidden" id="sel-date" value="" />                              
+                    </div>
+                    <div class="control-group sel-box">
+                        <label for="hotName">状态</label>
+                        <select class="form-control">
+                            <option>不限</option>
+                            <option>待核对</option>
+                            <option>待审批</option>
+                            <option>筹备中</option>
+                            <option>已上架</option>
+                            <option>已停止</option>
+                            <option>已下架</option>
+                            <option>已停用</option>
+                            <option>已退回</option>
+                        </select>                  
                     </div>
                 </form>
+                <button class="btn btn-default">查询</button>
+            </div>
+            <div class="centent-box-hander">
+                <button class="btn btn-default">导出</button>
+                <button class="btn btn-default  blue-btn">新增</button>                
+            </div>
+            <div class="content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th>编号</th>
+                        <th>分期数</th>
+                        <th>手续费</th>
+                        <th>服务费</th>
+                        <th>分期金额要求</th>
+                        <th>分期活动时间段</th>
+                        <th>行业</th>
+                        <th>银行供应商名称</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">查看</a><a class="btn btn-link">下架</a><a class="btn btn-link">查看合作商家</a></td>
+                        </tr>
+                        <tr>
+                        <td>01</td>
+                        <td>3期、6期、9期</td>
+                        <td>2.5%</td>
+                        <td>0.26%</td>
+                        <td>满1000元</td>
+                        <td>2017-08-09至2017-12-09</td>
+                        <td>酒店</td>
+                        <td>交通银行上海民生路支行</td>
+                        <td>待核对</td>
+                        <td><a class="btn btn-link">修改</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <span>记录总数：10</span>
+                <span><button class="btn btn-mini">上一步</button></span>
+                <span><input type="text" value="1">/10<span class="btn-link btn blue">跳转</span></span>
+                <span class="btn-link sel-now">1</span>
+                <span class="btn-link">2</span>
+                <span class="btn-link">3</span>
+                <span class="btn-link">4</span>
+                <span class="btn-link">5</span>
+                <span>...</span>
+                <span class="btn-link">10</span>
+                <span><button class="btn btn-mini">下一步</button></span>
             </div>
         </div>
     </div>

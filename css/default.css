@@ -8,7 +8,14 @@ body{
 .blue{
     color:#4fb7c7;
 }
-
+.blue-btn{
+    color:#fff;
+    background-color:#4fb7c7;
+}
+.blue-btn:hover{
+    color:#fff;
+    background-color:#3ad3c1;
+}
 .red{
     color:#ff3333;
 }
@@ -164,16 +171,21 @@ header{
 }
 /** footer **/
 .footer{
-    width:1120px;
+    width:100%;
     height:45px;
-    margin: auto;
     text-align: right;
     margin-top:15px;
+    padding-right: 20px;
 }
 .footer span{
     padding:4px 6px;
     margin-left:9px;
     font-size: 14px;
+}
+.footer input{
+    width:30px;
+    text-align: right;
+    border-radius: 5px;
 }
 .footer .sel-now{
     background-color: #f0f0f0;
@@ -188,4 +200,7 @@ header{
     border:1px solid #dddddd;
     font-size:14px;
     line-height: 14px;
+}
+.footer .blue{
+    color: #4fb7c7;
 }

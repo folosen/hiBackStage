@@ -1,9 +1,17 @@
 #content-box .centent-box .centent-box-hander{
     height:35px;
     width:100%;
-    margin-left:15px;
+    padding-left:15px;
+    padding-top: 5px;
     line-height: 35px;
     font-size: 16px;
+}
+#content-box .content{
+    height:auto;
+    width:100%;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 25px;
 }
 #content-box .centent-box .centent-box-hander form{
     display: inline-block;
@@ -12,8 +20,42 @@
 #content-box .centent-box .centent-box-hander form div{
     display: inline-block;
 }
+#content-box .centent-box .centent-box-hander .form-control{
+    margin:0px;
+    width:130px;
+    height:25px;
+}
+#content-box .centent-box .centent-box-hander .form-control[readonly]{
+    background-color: #fff;
+}
 #content-box .centent-box .centent-box-hander .control-group{
     height: 35px;
+    margin-left:30px;
+}
+#content-box .centent-box .centent-box-hander .sel-box {
+    line-height: 25px;
+}
+#content-box .centent-box .centent-box-hander .btn-default{
+    color:#4fb7c7;
+    border:1px solid #4fb7c7;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px;
+    float: right;
+    margin-right: 25px;
+    margin-top:4px;
+}
+#content-box .centent-box .centent-box-hander .blue-btn{
+    color:#fff;
+}
+#content-box .centent-box .centent-box-hander .sel-box .form-control{
+    display: inline-block;
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0px;
+    vertical-align: middle;
 }
 #content-box .centent-box .centent-box-hander .form-horizontal .control-label{
     padding: 0px;
@@ -24,4 +66,11 @@
 }
 #centent-box .centent-box{
     height:auto;
+}
+td .btn{
+    width:auto;
+    height:auto;
+    padding:0px;
+    margin:0 3px;
+    color: #4fb7c7;
 }
