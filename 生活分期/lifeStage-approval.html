@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">   
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="css/content-def.css">
-    <link rel="stylesheet" href="css/input-files.css">
-    <title>生活分期档案录入</title>
+    <link rel="stylesheet" href="css/lifeStage-Input.css">
+    <link rel="stylesheet" href="css/lifeStage-check.css">
+    <title>生活分期档案审批</title>
 </head>
 <body>
     <header>
@@ -73,8 +74,12 @@
             </ul>
         </div>
         <div class="centent-hander-nav">
-            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a>生活分期档案录入        </div>
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a>生活分期档案审批 
+        </div>
         <div class="centent-box">
+            <div class="centent-box-hander check-status">
+                <span>待审批</span>
+            </div>
             <div class="centent-box-hander">
                 <i class="fa fa-paste">分期信息</i>
             </div>
@@ -95,11 +100,35 @@
                         <td></td></tr>
                         <tr>
                         <td>手续费收取方式</td>
+                        <td>分期收取</td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-add">
+                    <tbody>
+                        <tr>
+                        <td>分期数</td>
+                        <td>3期</td>
+                        <td></td></tr>
+                        <tr>
+                        <td>手续费率</td>
                         <td>
-                            <select class="form-control">
-                                <option>一次性收取</option>
-                                <option selected="selected">分期收取</option>
-                            </select>
+                            <span>第一期&nbsp;&nbsp;0.75%</span>
+                            <span>第二期&nbsp;&nbsp;0.75%</span>
+                            <span>第三期&nbsp;&nbsp;0.75%</span>
+                        </td>
+                        <td></td></tr>
+                        <tr>
+                        <td>手续费承担方</td>
+                        <td>
+                            个人用户
+                        </td>
+                        <td></td></tr>
+                        <tr>
+                        <td>服务费承担方</td>
+                        <td>
+                            <span>商家</span>
+                            <span>服务费：3%</span>
                         </td>
                         <td></td></tr>
                     </tbody>
@@ -108,99 +137,34 @@
                     <tbody>
                         <tr>
                         <td>分期数</td>
-                        <td>
-                            <select class="form-control">
-                                <option>3期</option>
-                                <option>6期</option>
-                                <option>9期</option>
-                            </select>
-                        </td>
+                        <td>3期</td>
                         <td></td></tr>
                         <tr>
                         <td>手续费率</td>
                         <td>
-                            <span>第一期<input class="form-control" type="text" value="0.75%"></span>
-                            <span>第二期<input class="form-control"type="text" value="0.75%"></span>
-                            <span>第三期<input class="form-control"type="text" value="0.75%"></span>
-                        </td>
-                        <td><i class="fa fa-plus-square"></i></td></tr>
-                        <tr>
-                        <td>手续费承担方</td>
-                        <td>
-                            <select class="form-control">
-                                <option>商家</option>
-                                <option selected="selected">个人用户</option>
-                                <option>免息</option>
-                            </select>
-                        </td>
-                        <td><i class="fa fa-minus-square"></i></td></tr>
-                        <tr>
-                        <td>服务费承担方</td>
-                        <td>
-                            <select class="form-control">
-                                <option selected="selected">商家</option>
-                                <option>个人用户</option>
-                                <option>银行</option>
-                            </select>
-                            服务费
-                            <select class="form-control">
-                                <option selected="selected">固定费率</option>
-                            </select>
-                            <span><input class="form-control text-controle" type="text"></span>元/单
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                            <select class="form-control">
-                                <option>3期</option>
-                                <option>6期</option>
-                                <option>9期</option>
-                            </select>
+                            <span>第一期&nbsp;&nbsp;0.75%</span>
+                            <span>第二期&nbsp;&nbsp;0.75%</span>
+                            <span>第三期&nbsp;&nbsp;0.75%</span>
                         </td>
                         <td></td></tr>
                         <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期<input class="form-control" type="text" value="0.75%"></span>
-                            <span>第二期<input class="form-control"type="text" value="0.75%"></span>
-                            <span>第三期<input class="form-control"type="text" value="0.75%"></span>
-                        </td>
-                        <td><i class="fa fa-plus-square"></i></td></tr>
-                        <tr>
                         <td>手续费承担方</td>
                         <td>
-                            <select class="form-control">
-                                <option>商家</option>
-                                <option selected="selected">个人用户</option>
-                                <option>免息</option>
-                            </select>
+                            个人用户
                         </td>
-                        <td><i class="fa fa-minus-square"></i></td></tr>
+                        <td></td></tr>
                         <tr>
                         <td>服务费承担方</td>
                         <td>
-                            <select class="form-control">
-                                <option selected="selected">商家</option>
-                                <option>个人用户</option>
-                                <option>银行</option>
-                            </select>
-                            服务费
-                            <select class="form-control">
-                                <option selected="selected">固定费率</option>
-                            </select>
-                            <span><input class="form-control text-controle" type="text"></span>元/单
+                            <span>商家</span>
+                            <span>服务费：3%</span>
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="centent-box-hander">
-                <i class="fa fa-paste">行业</i>
+                <i class="fa fa-file-text">行业</i>
             </div>
             <div class="content">
                 <table class="table">
@@ -208,20 +172,14 @@
                         <tr>
                         <td>匹配行业</td>
                         <td>
-                            <select class="form-control">
-                                <option>酒店</option>
-                                <option>旅游</option>
-                                <option selected="selected">机票</option>
-                                <option>教育</option>
-                                <option>贵金属</option>
-                            </select>
+                            酒店
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="centent-box-hander">
-                <i class="fa fa-paste">分期设定</i>
+                <i class="fa fa-calendar-plus-o">分期设定</i>
             </div>
             <div class="content">
                 <table class="table">
@@ -229,55 +187,35 @@
                         <tr>
                         <td>活动时间</td>
                         <td>
-                            <div class="control-group">
-                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
-                                </div>
-                                <input type="hidden" id="sel-date" value="" />
-                                ~
-                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
-                                </div>
-                                <input type="hidden" id="sel-date" value="" />                              
-                            </div>
+                            2016/05/21 ~ 2018/05/21 
                         </td>
                         <td></td></tr>
                         <tr>
                         <td>筹备时间</td>
                         <td>
-                            <div class="control-group">
-                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
-                                </div>
-                                <input type="hidden" id="sel-date" value="" />
-                                ~
-                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
-                                </div>
-                                <input type="hidden" id="sel-date" value="" />                              
-                            </div>
+                            2016/05/21 ~ 2018/05/21 
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="centent-box-hander">
-                <i class="fa fa-paste">指定规则</i>
+                <i class="fa fa-file-text">指定规则</i>
             </div>
             <div class="content">
                 <table class="table">
                     <tbody>
                         <tr>
                         <td>
-                            <select class="form-control">
-                                <option>平台指定</option>
-                                <option>平商合作</option>
-                            </select></td>
+                           平商合作
                         <td>                            
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="centent-box-hander">
+                <button class="btn btn-default blue-btn">通过</button><button class="btn btn-default">退回</button>
             </div>
         </div>
     </div>

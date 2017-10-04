@@ -1,4 +1,4 @@
-.centent-box-hander .fa-paste:before, .fa-clipboard:before{
+.centent-box-hander .fa:before{
     margin-right:10px;
 }
 .centent-box-hander i{
@@ -53,7 +53,11 @@
     color: #4fb7c7;
     cursor: pointer;
 }
-.table-add tbody > tr:last-child input{
+tbody > tr > td div{
+    display: inline-block;
+    font-size: 14px;
+}
+tbody > tr:last-child input{
     margin-right: -10px;
     width: 100px;
 }
@@ -66,4 +70,18 @@
 }
 #content-box .content{
     margin-top:0px;
+}
+.add-on{
+    padding-top:2px;
+    margin-left: -10px;
+    color: #4fb7c7;
+}
+.form-control[readonly]{
+    background-color: #fff;
+}
+.control-group{
+    margin-right: 100px;
+}
+#content-box .centent-box .centent-box-hander .btn-default{
+    float: none;
 }

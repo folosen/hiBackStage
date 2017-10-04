@@ -1,0 +1,18 @@
+#content-box .check-status{
+    padding: 0px !important;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+#content-box .check-status span{
+    display: inline-block;
+    width: 87px;
+    height: 35px;
+    background-color: #4fb7c7;
+    color:#fff;
+    text-align: right;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    padding-right: 25px;
+
+}
