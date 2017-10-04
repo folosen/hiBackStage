@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.min.css">    
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.css"> 
+    <link rel="stylesheet" href="../css/build.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">   
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="css/content-def.css">
+    <link rel="stylesheet" href="css/input-files.css">
+    <title>生活分期档案录入</title>
+</head>
+<body>
+    <header>
+        <a class="h-icon" href="#"></a>
+        嗨生活运营后台
+        <div class="hand-nav"> 
+            <p class="user-bar">             
+                <button class="user-end">退出</button>
+                <button class="user-set">修改密码</button>
+                <button class="user"><i class="fa fa-user"></i>管理员2145</button>
+            </p>
+        </div>
+    </header>
+    <div id="content-box">
+        <div class="section-nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li class="divider"></li>
+                <li><a href="#">基础设置<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">供应商管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">商品管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">订单管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">银行活动<i class="fa fa-angle-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">生活分期</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">银行优惠</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">银行供应商管理</a></li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">商家活动<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">优惠管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">礼品卡管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">红包管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">超值加购<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">口碑管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">统计管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">对账管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">订单发票管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">供应商佣金管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+            </ul>
+        </div>
+        <div class="centent-hander-nav">
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a>生活分期档案录入        </div>
+        <div class="centent-box">
+            <div class="centent-box-hander">
+                <i class="fa fa-paste">分期信息</i>
+            </div>
+            <div class="content">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <td>银行名称</td>
+                        <td>交通银行</td>
+                        <td></td></tr>
+                        <tr>
+                        <td>银行供应商名称</td>
+                        <td>交通银行民生路支行</td>
+                        <td></td></tr>
+                        <tr>
+                        <td>金额范围</td>
+                        <td>单笔消费满1500元</td>
+                        <td></td></tr>
+                        <tr>
+                        <td>手续费收取方式</td>
+                        <td>
+                            <select class="form-control">
+                                <option>一次性收取</option>
+                                <option selected="selected">分期收取</option>
+                            </select>
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-add">
+                    <tbody>
+                        <tr>
+                        <td>分期数</td>
+                        <td>
+                            <select class="form-control">
+                                <option>3期</option>
+                                <option>6期</option>
+                                <option>9期</option>
+                            </select>
+                        </td>
+                        <td></td></tr>
+                        <tr>
+                        <td>手续费率</td>
+                        <td>
+                            <span>第一期<input class="form-control" type="text" value="0.75%"></span>
+                            <span>第二期<input class="form-control"type="text" value="0.75%"></span>
+                            <span>第三期<input class="form-control"type="text" value="0.75%"></span>
+                        </td>
+                        <td><i class="fa fa-plus-square"></i></td></tr>
+                        <tr>
+                        <td>手续费承担方</td>
+                        <td>
+                            <select class="form-control">
+                                <option>商家</option>
+                                <option selected="selected">个人用户</option>
+                                <option>免息</option>
+                            </select>
+                        </td>
+                        <td><i class="fa fa-minus-square"></i></td></tr>
+                        <tr>
+                        <td>服务费承担方</td>
+                        <td>
+                            <select class="form-control">
+                                <option selected="selected">商家</option>
+                                <option>个人用户</option>
+                                <option>银行</option>
+                            </select>
+                            服务费
+                            <select class="form-control">
+                                <option selected="selected">固定费率</option>
+                            </select>
+                            <span><input class="form-control text-controle" type="text"></span>元/单
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+                <table class="table table-add">
+                    <tbody>
+                        <tr>
+                        <td>分期数</td>
+                        <td>
+                            <select class="form-control">
+                                <option>3期</option>
+                                <option>6期</option>
+                                <option>9期</option>
+                            </select>
+                        </td>
+                        <td></td></tr>
+                        <tr>
+                        <td>手续费率</td>
+                        <td>
+                            <span>第一期<input class="form-control" type="text" value="0.75%"></span>
+                            <span>第二期<input class="form-control"type="text" value="0.75%"></span>
+                            <span>第三期<input class="form-control"type="text" value="0.75%"></span>
+                        </td>
+                        <td><i class="fa fa-plus-square"></i></td></tr>
+                        <tr>
+                        <td>手续费承担方</td>
+                        <td>
+                            <select class="form-control">
+                                <option>商家</option>
+                                <option selected="selected">个人用户</option>
+                                <option>免息</option>
+                            </select>
+                        </td>
+                        <td><i class="fa fa-minus-square"></i></td></tr>
+                        <tr>
+                        <td>服务费承担方</td>
+                        <td>
+                            <select class="form-control">
+                                <option selected="selected">商家</option>
+                                <option>个人用户</option>
+                                <option>银行</option>
+                            </select>
+                            服务费
+                            <select class="form-control">
+                                <option selected="selected">固定费率</option>
+                            </select>
+                            <span><input class="form-control text-controle" type="text"></span>元/单
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="centent-box-hander">
+                <i class="fa fa-paste">行业</i>
+            </div>
+            <div class="content">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <td>匹配行业</td>
+                        <td>
+                            <select class="form-control">
+                                <option>酒店</option>
+                                <option>旅游</option>
+                                <option selected="selected">机票</option>
+                                <option>教育</option>
+                                <option>贵金属</option>
+                            </select>
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="centent-box-hander">
+                <i class="fa fa-paste">分期设定</i>
+            </div>
+            <div class="content">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <td>活动时间</td>
+                        <td>
+                            <div class="control-group">
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="sel-date" value="" />
+                                ~
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="sel-date" value="" />                              
+                            </div>
+                        </td>
+                        <td></td></tr>
+                        <tr>
+                        <td>筹备时间</td>
+                        <td>
+                            <div class="control-group">
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="sel-date" value="" />
+                                ~
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="sel-date" value="" />                              
+                            </div>
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="centent-box-hander">
+                <i class="fa fa-paste">指定规则</i>
+            </div>
+            <div class="content">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <td>
+                            <select class="form-control">
+                                <option>平台指定</option>
+                                <option>平商合作</option>
+                            </select></td>
+                        <td>                            
+                        </td>
+                        <td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>
