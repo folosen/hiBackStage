@@ -85,3 +85,16 @@ tbody > tr:last-child input{
 #content-box .centent-box .centent-box-hander .btn-default{
     float: none;
 }
+.table > tbody > tr > td .form-control-small{
+    width: 65px;
+}
+#content-box .table > tbody > tr > td .form-control-litle{
+    width: 50px !important;
+}
+#content-box .table > tbody > tr > td .form-control-checkbox{
+    text-align: left;
+    width: 40px !important;
+}
+#content-box .table > tbody > tr > td label{
+    font-weight: normal;
+}
