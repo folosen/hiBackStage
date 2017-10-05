@@ -38,3 +38,16 @@
 #content-box .centent-box .centent-box-hander .float-none{
     float: none;
 }
+.control-group .only-select{
+    position: relative;
+    padding:0px;
+}
+.control-group{
+    margin-right: 15px;
+}
+#content-box .centent-box-hander .control-group .group-user-stage{
+    width: 96px;
+}
+#content-box .centent-box-hander .control-group .group-trade{
+    width: 64px;
+}
