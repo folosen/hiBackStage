@@ -1,0 +1,53 @@
+#content-box .centent-box .centent-box-hander .control-group{
+    margin-left:0px;
+}
+#content-box .centent-box td label{
+    font-weight: normal;
+}
+.table > tbody > tr > td{
+    height:30px;
+    line-height: 30px;
+}
+#content-box .cptext{
+    width:auto;
+    height:auto;
+    position: relative;
+    padding-right: 25px;    
+}
+#content-box .centent-box .cptext{
+    padding-left: 100px;
+    height: 250px;
+}
+#content-box .cptext label{
+    position: absolute;
+    top:0px;
+    left: 15px;
+}
+
+#content-box .centent-box .cptext .form-horizontal{
+    width: 100%;
+    height: 200px;
+}
+#content-box .centent-box .cptext .form-horizontal .control-group{
+    width: 100%;
+}
+#content-box .centent-box .cptext .form-horizontal #cptext{
+    width: 100%;
+    height: 200px;
+}
+#content-box .centent-box .centent-box-hander .float-none{
+    float: none;
+}
+.control-group .only-select{
+    position: relative;
+    padding:0px;
+}
+.control-group{
+    margin-right: 15px;
+}
+#content-box .centent-box-hander .control-group .group-user-stage{
+    width: 96px;
+}
+#content-box .centent-box-hander .control-group .group-trade{
+    width: 64px;
+}

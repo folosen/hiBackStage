@@ -1,0 +1,7 @@
+.table > tbody > tr > td{
+    height: 54px;
+    line-height: 54px;
+}
+.table > tbody > tr > td:first-child{
+    text-align: right;
+}
