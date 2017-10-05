@@ -74,3 +74,10 @@ td .btn{
     margin:0 3px;
     color: #4fb7c7;
 }
+.centent-box-hander .fa:before{
+    margin-right:10px;
+}
+.centent-box-hander i{
+    color: #4fb7c7;
+    font-size: 18px;
+}
