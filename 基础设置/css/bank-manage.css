@@ -19,3 +19,43 @@
 #content-box .centent-box .centent-box-hander .form-user{
     width: 160px;
 }
+.table-condensed > tbody > tr > td{
+    height: 20px;
+    line-height: 20px;
+}
+.table-condensed > tbody > tr > td:first-child{
+    font-weight: bold;
+}
+#content-box .table > tbody > tr  .text-top-jdt{
+    vertical-align: text-bottom;
+    line-height: 30px;
+}
+.table-condensed  tbody  .checkbox{
+    display: inline-block;
+    margin: 0px;
+    width: 20px;
+    vertical-align: middle;
+}
+.table-condensed  tbody label{
+    margin: 0px;
+}
+.table-condensed  tbody .bold{
+    font-weight: bold;
+}
+#content-box .table-condensed > tbody > tr > td .bold{
+    font-weight: bold;
+}
+.table-jdt > tbody > tr > td:first-child{
+    width: 7%;
+    padding-left: 0px;
+}
+.table-jdt > tbody > tr > td:last-child{
+    width: 0%;
+}
+.table-jdt > tbody  .border{
+    border-bottom: 1px dashed black;
+}
+#cltext{
+    width: 580px;
+    height: 130px;
+}
