@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.min.css">    
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.css"> 
+    <link rel="stylesheet" href="../css/build.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">   
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="css/content-def.css">
+    <link rel="stylesheet" href="css/cpPartner-rule.css">
+    <link rel="stylesheet" href="css/bank-manage.css">
+    <title>员工管理</title>
+</head>
+<body>
+    <header>
+        <a class="h-icon" href="#"></a>
+        嗨生活运营后台
+        <div class="hand-nav"> 
+            <p class="user-bar">             
+                <button class="user-end">退出</button>
+                <button class="user-set">修改密码</button>
+                <button class="user"><i class="fa fa-user"></i>管理员2145</button>
+            </p>
+        </div>
+    </header>
+    <div id="content-box">
+        <div class="section-nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li class="divider"></li>
+                <li><a href="#">基础设置<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">供应商管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">商品管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">订单管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">银行活动<i class="fa fa-angle-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">生活分期</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">银行优惠</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">银行供应商管理</a></li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">商家活动<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">优惠管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">礼品卡管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">红包管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">超值加购<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">口碑管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">统计管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">对账管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">订单发票管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+                <li><a href="#">供应商佣金管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="divider"></li>
+            </ul>
+        </div>
+        <div class="centent-hander-nav">
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">基础设置<i class="fa fa-angle-right"></i></a>员工管理
+        </div>
+        <div class="centent-box">
+            <div class="centent-box-hander">
+                <form class="form-horizontal" role="form">
+                    <div class="control-group">
+                        <label for="group-user-name">员工名称：</label>
+                        <input type="text" class="form-control form-user" id="group-user-name" placeholder="请输入员工名称/手机号">                                         
+                    </div>
+                    <div class="control-group">
+                        <label for="group-user-ct">分公司：</label>
+                        <select class="form-control only-select" id="group-user-ct">
+                            <option>全部</option>
+                            <option>上海分公司</option>
+                            <option>合肥分公司</option>
+                            <option>北京分公司</option>
+                            <option>深圳分公司</option>
+                        </select>                      
+                    </div>
+                    <div class="control-group">
+                        <label for="group-user-status">员工状态：</label>
+                        <select class="form-control only-select" id="group-user-status">
+                            <option>全部</option>
+                            <option>正常</option>
+                            <option>禁用</option>
+                        </select>                      
+                    </div>
+                </form>
+                <button class="btn btn-default btn-left">搜索</button>
+                <button class="btn btn-default btn-left blue-btn">添加</button>
+            </div>
+            <div class="content">
+                <table class="table table-bordered table-min">
+                    <thead>
+                        <tr>
+                        <th>编码</th>
+                        <th>员工姓名</th>
+                        <th>职位</th>
+                        <th>所属部门</th>
+                        <th>最近更新时间</th>
+                        <th>备注</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>正常</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>sg986557</td>
+                        <td>小明</td>
+                        <td>会计</td>
+                        <td>财务部门</td>
+                        <td>2017.01.01 12:12:19</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <span>记录总数：10</span>
+                <span><button class="btn btn-mini">上一步</button></span>
+                <span><input type="text" value="1">/10<span class="btn-link btn blue">跳转</span></span>
+                <span class="btn-link sel-now">1</span>
+                <span class="btn-link">2</span>
+                <span class="btn-link">3</span>
+                <span class="btn-link">4</span>
+                <span class="btn-link">5</span>
+                <span>...</span>
+                <span class="btn-link">10</span>
+                <span><button class="btn btn-mini">下一步</button></span>
+            </div>
+        </div>
+    </div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../js/default.js"></script>
+</body>
+</html>

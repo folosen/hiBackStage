@@ -2,7 +2,11 @@
     height: 54px;
     line-height: 54px;
 }
-.table > tbody > tr > td:first-child{
+.table-min > tbody > tr > td{
+    height: 30px;
+    line-height: 30px;
+}
+.table-bank > tbody > tr > td:first-child{
     text-align: right;
 }
 .table > tbody > tr > td .address{
@@ -11,4 +15,7 @@
 #content-box .table > tbody > tr  .text-top{
     vertical-align: text-bottom;
     line-height: 20px;
+}
+#content-box .centent-box .centent-box-hander .form-user{
+    width: 160px;
 }

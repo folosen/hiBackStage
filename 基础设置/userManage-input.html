@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="css/content-def.css">
     <link rel="stylesheet" href="css/lifeStage-Input.css">
-    <link rel="stylesheet" href="css/lifeStage-check.css">
-    <title>信用卡供应商详情</title>
+    <link rel="stylesheet" href="css/bank-manage.css">
+    <title>添加员工</title>
 </head>
 <body>
     <header>
@@ -74,139 +74,76 @@
             </ul>
         </div>
         <div class="centent-hander-nav">
-            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a><a href="#">信用卡供应商管理<i class="fa fa-angle-right"></i></a>信用卡供应商详情      
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">基础设置<i class="fa fa-angle-right"></i></a><a href="#">员工管理<i class="fa fa-angle-right"></i></a>添加员工      
         </div>
         <div class="centent-box">
-            <div class="centent-box-hander">
-                <i class="fa fa-paste">基础信息</i>
-            </div>
             <div class="content">
-                <table class="table">
+                <table class="table table-bank">
                     <tbody>
                         <tr>
-                        <td>银行供应商名称</td>
-                        <td>交通银行上海民生路支行业务部</td>
+                        <td><span class="red">*&nbsp;</span>账号：</td>
+                        <td><input class="form-control text-controle" type="text" placeholder="请输入姓名"></td>
                         <td></td></tr>
                         <tr>
-                        <td>银行名称</td>
-                        <td>交通银行</td>
+                        <td><span class="red">*&nbsp;</span>姓名：</td>
+                        <td><input class="form-control text-controle" type="text" placeholder="请输入姓名"></td>
                         <td></td></tr>
                         <tr>
-                        <td>分行名称</td>
-                        <td>浦东新区分行</td>
+                        <td><span class="red">*&nbsp;</span>邮箱：</td>
+                        <td><input class="form-control text-controle" type="text" placeholder="请输入邮箱"></td>
                         <td></td></tr>
                         <tr>
-                        <td>支行名称</td>
-                        <td>张杨路支行</td>
+                        <td><span class="red">*&nbsp;</span>密码：</td>
+                        <td><input class="form-control text-controle" type="text" placeholder="请输入密码"> <span class="red">&nbsp;*&nbsp;</span>   必须要包含大写字母、小写字母、数字或标点符号，不能少于6位！</td>
                         <td></td></tr>
                         <tr>
-                        <td>金额范围</td>
-                        <td>单笔消费满1500元</td>
+                        <td><span class="red">*&nbsp;</span>手机号：</td>
+                        <td><input class="form-control text-controle" type="text" placeholder="请输入手机号"></td>
                         <td></td></tr>
                         <tr>
-                        <td>手续费收取方式</td>
+                        <td><span class="red">*&nbsp;</span>职位：</td>
                         <td>
-                           <span>分期收取</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>一次性收取</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                           3期
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
+                            <select class="form-control">
+                                <option>全部</option>
+                                <option>销售</option>
+                                <option>销售经理</option>
+                                <option>销售总监</option>
+                                <option>大区经理</option>
+                                <option>城市总经理</option>
+                                <option>BD</option>
+                                <option>BD总监</option>
+                                <option>BD总裁</option>
+                            </select>
                         </td>
                         <td></td></tr>
                         <tr>
-                        <td></td>
+                        <td>入职日期：</td>
                         <td>
-                            <span>一次性收取 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                            6期
+                            <div class="control-group">
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="cp-date1" value="" />                           
+                            </div>
                         </td>
                         <td></td></tr>
                         <tr>
-                        <td>手续费率</td>
+                        <td>离职日期：</td>
                         <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
-                            <span>第四期 0.75%</span>
-                            <span>第五期 0.75%</span>
-                            <span>第六期 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td></td>
-                        <td>
-                            <span>一次性收取 0.25%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                 <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                            9期
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
-                            <span>第四期 0.75%</span>
-                            <span>第五期 0.75%</span>
-                            <span>第六期 0.75%</span>
-                            <span>第七期 0.75%</span>
-                            <span>第八期 0.75%</span>
-                            <span>第九期 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td></td>
-                        <td>
-                            <span>一次性收取 0.25%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="content">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                        <td>合作期限</td>
-                        <td>
-                            2016/05/21 ~2018/05/21 
+                            <div class="control-group">
+                                <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
+                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                </div>
+                                <input type="hidden" id="cp-date2" value="" />                           
+                            </div>
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="centent-box-hander">
-                <button class="btn btn-default">返回</button>
+                <button class="btn btn-default blue-btn">保存</button>
+                <button class="btn btn-default">取消</button>
             </div>
         </div>
     </div>

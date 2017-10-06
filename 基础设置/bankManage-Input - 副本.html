@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="css/content-def.css">
     <link rel="stylesheet" href="css/lifeStage-Input.css">
-    <link rel="stylesheet" href="css/lifeStage-check.css">
-    <title>信用卡供应商审批</title>
+    <link rel="stylesheet" href="css/bank-manage.css">
+    <title>新增/编辑银行档案</title>
 </head>
 <body>
     <header>
@@ -74,142 +74,56 @@
             </ul>
         </div>
         <div class="centent-hander-nav">
-            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a><a href="#">信用卡供应商管理<i class="fa fa-angle-right"></i></a>信用卡供应商审批      
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">基础设置<i class="fa fa-angle-right"></i></a><a href="#">银行档案<i class="fa fa-angle-right"></i></a>新增/编辑银行档案      
         </div>
         <div class="centent-box">
-            <div class="centent-box-hander check-status">
-                <span>待审批</span>
-            </div>
             <div class="centent-box-hander">
                 <i class="fa fa-paste">基础信息</i>
             </div>
             <div class="content">
-                <table class="table">
+                <table class="table table-bank">
                     <tbody>
                         <tr>
-                        <td>银行供应商名称</td>
-                        <td>交通银行上海民生路支行业务部</td>
+                        <td>银行名：</td>
+                        <td><input class="form-control text-controle" type="text"></td>
                         <td></td></tr>
                         <tr>
-                        <td>银行名称</td>
-                        <td>交通银行</td>
+                        <td>银行编码：</td>
+                        <td><input class="form-control text-controle" type="text"></td>
                         <td></td></tr>
                         <tr>
-                        <td>分行名称</td>
-                        <td>浦东新区分行</td>
+                        <td>银行号：</td>
+                        <td><input class="form-control text-controle" type="text"></td>
                         <td></td></tr>
                         <tr>
-                        <td>支行名称</td>
-                        <td>张杨路支行</td>
-                        <td></td></tr>
-                        <tr>
-                        <td>金额范围</td>
-                        <td>单笔消费满1500元</td>
-                        <td></td></tr>
-                        <tr>
-                        <td>手续费收取方式</td>
+                        <td>地址：</td>
                         <td>
-                           <span>分期收取</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>一次性收取</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                           3期
+                            <select class="form-control">
+                                <option>国家</option>
+                            </select>
+                            <select class="form-control">
+                                <option>省/市</option>
+                            </select>
+                            <select class="form-control">
+                                <option>街道</option>
+                            </select>
                         </td>
                         <td></td></tr>
                         <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
-                        </td>
+                        <td>具体地址：</td>
+                        <td><input class="form-control text-controle address" type="text"></td>
                         <td></td></tr>
                         <tr>
-                        <td></td>
+                        <td class="text-top">徽标：</td>
                         <td>
-                            <span>一次性收取 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                            6期
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
-                            <span>第四期 0.75%</span>
-                            <span>第五期 0.75%</span>
-                            <span>第六期 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td></td>
-                        <td>
-                            <span>一次性收取 0.25%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-                 <table class="table table-add">
-                    <tbody>
-                        <tr>
-                        <td>分期数</td>
-                        <td>
-                            9期
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td>手续费率</td>
-                        <td>
-                            <span>第一期 0.75%</span>
-                            <span>第二期 0.75%</span>
-                            <span>第三期 0.75%</span>
-                            <span>第四期 0.75%</span>
-                            <span>第五期 0.75%</span>
-                            <span>第六期 0.75%</span>
-                            <span>第七期 0.75%</span>
-                            <span>第八期 0.75%</span>
-                            <span>第九期 0.75%</span>
-                        </td>
-                        <td></td></tr>
-                        <tr>
-                        <td></td>
-                        <td>
-                            <span>一次性收取 0.25%</span>
-                        </td>
-                        <td></td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="content">
-                <table class="table">
-                    <tbody>
-                        <tr>
-                        <td>合作期限</td>
-                        <td>
-                            2016/05/21 ~2018/05/21 
+                            <img src="../img/scbtn.png" alt="">
                         </td>
                         <td></td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="centent-box-hander">
-                <button class="btn btn-default blue-btn">通过</button><button class="btn btn-default">退回</button>
+                <button class="btn btn-default blue-btn">提交</button>
             </div>
         </div>
     </div>

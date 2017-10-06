@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="css/content-def.css">
     <link rel="stylesheet" href="css/cpPartner-rule.css">
-    <title>查看商品</title>
+    <link rel="stylesheet" href="css/bank-manage.css">
+    <title>角色管理</title>
 </head>
 <body>
     <header>
@@ -73,109 +74,101 @@
             </ul>
         </div>
         <div class="centent-hander-nav">
-            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">银行活动<i class="fa fa-angle-right"></i></a><a href="#">生活分期<i class="fa fa-angle-right"></i></a><a href="#">生活分期管理<i class="fa fa-angle-right"></i></a><a href="#">查看合作商家<i class="fa fa-angle-right"></i></a>查看合作商品
+            <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">基础设置<i class="fa fa-angle-right"></i></a>角色管理
         </div>
         <div class="centent-box">
             <div class="centent-box-hander">
                 <form class="form-horizontal" role="form">
                     <div class="control-group">
-                        <label for="hotName">商家名称：</label>好运来旅行社                                   
-                    </div>
-                    <div class="control-group">
-                        <label for="hotName">酒店名称</label>
-                        <input type="text" class="form-control" id="hotelName" placeholder>                                     
-                    </div>
-                    <div class="control-group sel-box">
-                        <label for="hotName">状态</label>
-                        <select class="form-control">
-                            <option>不限</option>
-                            <option>已上架</option>
-                            <option>已下架</option>
-                        </select>                  
+                        <label for="group-user-job">部门管理：</label>
+                        <input type="text" class="form-control form-user" id="group-user-job" placeholder="请输入部门名称">                                         
                     </div>
                 </form>
-                <button class="btn btn-default">查询</button>
-            </div>
-            <div class="centent-box-hander">
-                <button class="btn btn-default">导出</button>          
+                <button class="btn btn-default btn-left">搜索</button>
+                <button class="btn btn-default btn-left blue-btn">添加</button>
             </div>
             <div class="content">
-                <table class="table table-bordered">
+                <table class="table table-bordered table-min">
                     <thead>
                         <tr>
-                            <th>编号</th>
-                            <th>套餐名称</th>
-                            <th>商品名称</th>
-                            <th>所属酒店</th>
-                            <th>状态</th>
-                            <th>操作</th>
+                        <th>编码</th>
+                        <th>角色</th>
+                        <th>描述</th>
+                        <th>状态</th>
+                        <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td>676</td>
-                        <td>双早</td>
-                        <td>豪华大床房</td>
-                        <td>香格里拉大酒店</td>
-                        <td>已上架</td>
-                        <td><a class="btn btn-link">下架</a></td>
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>启用</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
                         </tr>
                         <tr>
-                        <td>1232</td>
-                        <td>单早+迪士尼成人票1张</td>
-                        <td>豪华海景房</td>
-                        <td>上海世贸皇家艾美酒店</td>
-                        <td>已下架</td>
-                        <td><a class="btn btn-link">上架</a></td>
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
                         </tr>
                         <tr>
-                        <td>676</td>
-                        <td>双早</td>
-                        <td>豪华大床房</td>
-                        <td>香格里拉大酒店</td>
-                        <td>已上架</td>
-                        <td><a class="btn btn-link">下架</a></td>
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>启用</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
                         </tr>
                         <tr>
-                        <td>1232</td>
-                        <td>单早+迪士尼成人票1张</td>
-                        <td>豪华海景房</td>
-                        <td>上海世贸皇家艾美酒店</td>
-                        <td>已下架</td>
-                        <td><a class="btn btn-link">上架</a></td>
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
                         </tr>
                         <tr>
-                        <td>676</td>
-                        <td>双早</td>
-                        <td>豪华大床房</td>
-                        <td>香格里拉大酒店</td>
-                        <td>已上架</td>
-                        <td><a class="btn btn-link">下架</a></td>
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>启用</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
                         </tr>
                         <tr>
-                        <td>1232</td>
-                        <td>单早+迪士尼成人票1张</td>
-                        <td>豪华海景房</td>
-                        <td>上海世贸皇家艾美酒店</td>
-                        <td>已下架</td>
-                        <td><a class="btn btn-link">上架</a></td>
-                        </tr>  
+                        <td>798787978797</td>
+                        <td>销售</td>
+                        <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
                         <tr>
+                        <td>798787978797</td>
+                        <td>销售</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>  
+                        <td>启用</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
                         <tr>
+                        <td>798787978797</td>
+                        <td>销售</td>
                         <td></td>
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
+                        <tr>
+                        <td>798787978797</td>
+                        <td>销售</td>
                         <td></td>
+                        <td>启用</td>
+                        <td><a class="btn btn-link">编辑</a><a class="btn btn-link">停用</a></td>
+                        </tr>
+                        <tr>
+                        <td>798787978797</td>
+                        <td>销售</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>                          
+                        <td>停用</td>
+                        <td><a class="btn btn-link">启用</a><a class="btn btn-link">删除</a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
