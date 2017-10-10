@@ -802,6 +802,10 @@ if (typeof jQuery === 'undefined') {
 
       $this.attr('aria-expanded', 'false')
       $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
+      $this
+      .children("i")
+      .removeClass('fa-angle-left').addClass('fa-angle-right');
+      $this.next().hide();
     })
   }
 
@@ -832,10 +836,14 @@ if (typeof jQuery === 'undefined') {
       $this
         .trigger('focus')
         .attr('aria-expanded', 'true')
-
+      $this
+        .children("i")
+        .removeClass('fa-angle-right').addClass('fa-angle-left')
       $parent
         .toggleClass('open')
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
+        .trigger($.Event('shown.bs.dropdown', relatedTarget));
+      $this
+        .next().show();
     }
 
     return false

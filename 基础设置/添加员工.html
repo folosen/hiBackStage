@@ -32,44 +32,54 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">首页</a></li>
                 <li class="divider"></li>
-                <li><a href="#">基础设置<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">供应商管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">商品管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">订单管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">银行活动<i class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">生活分期</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">银行优惠</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">银行供应商管理</a></li>
+                    <ul class="first-ul">
+                        <li></li>
+                            <a href="#">生活分期管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">生活分期档案录入</a></li>
+                            <li><a href="#">生活分期档案核对</a></li>
+                            <li><a href="#">生活分期档案审批</a></li>
+                            <li><a href="#">生活分期详情</a></li>
+                            <li><a href="#">查看合作商家</a></li>
+                            <li><a href="#">用户分期查询</a></li>
+                            <li><a href="#">生活分期订单管理</a></li>
+                            </ul>                            
+                        </li>
+                        <li></li>
+                            <a href="#">银行供应商管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">添加信用卡供应商</a></li>
+                            <li><a href="#">信用卡供应商核对</a></li>
+                            <li><a href="#">信用卡供应商审批</a></li>
+                            <li><a href="#">信用卡供应商详情</a></li>
+                            </ul>                            
+                        </li>
                     </ul>
                 </li>
                 <li class="divider"></li>
-                <li><a href="#">商家活动<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">优惠管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">礼品卡管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">红包管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">超值加购<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">口碑管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">统计管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">对账管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">订单发票管理<i class="fa fa-angle-right"></i></a></li>
-                <li class="divider"></li>
-                <li><a href="#">供应商佣金管理<i class="fa fa-angle-right"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">通用配置<i class="fa fa-angle-right"></i></a>
+                    <ul class="first-ul">
+                        <li></li>
+                            <a href="#">员工管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">员工管理</a></li>
+                            <li><a href="#">角色管理</a></li>
+                            <li><a href="#">权限管理</a></li>
+                            </ul>                            
+                        </li>
+                        <li></li>
+                            <a href="#">银行管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">行业档案</a></li>
+                            <li><a href="#">分行管理</a></li>
+                            <li><a href="#">支行管理</a></li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </li>
                 <li class="divider"></li>
             </ul>
         </div>
@@ -82,37 +92,37 @@
                     <tbody>
                         <tr>
                         <td><span class="red">*&nbsp;</span>账号：</td>
-                        <td><input class="form-control text-controle" type="text" placeholder="请输入姓名"></td>
+                        <td><input class="form-control text-controle" type="text" id="userAco" placeholder="请输入账号"></td>
                         <td></td></tr>
                         <tr>
                         <td><span class="red">*&nbsp;</span>姓名：</td>
-                        <td><input class="form-control text-controle" type="text" placeholder="请输入姓名"></td>
+                        <td><input class="form-control text-controle" type="text" id="userName" placeholder="请输入姓名"></td>
                         <td></td></tr>
                         <tr>
                         <td><span class="red">*&nbsp;</span>邮箱：</td>
-                        <td><input class="form-control text-controle" type="text" placeholder="请输入邮箱"></td>
+                        <td><input class="form-control text-controle" type="text" id="userEmail" placeholder="请输入邮箱"></td>
                         <td></td></tr>
                         <tr>
                         <td><span class="red">*&nbsp;</span>密码：</td>
-                        <td><input class="form-control text-controle" type="text" placeholder="请输入密码"> <span class="red">&nbsp;*&nbsp;</span>   必须要包含大写字母、小写字母、数字或标点符号，不能少于6位！</td>
+                        <td><input class="form-control text-controle" type="text" id="userPwd" placeholder="请输入密码"> <span class="red">&nbsp;*&nbsp;</span>   必须要包含大写字母、小写字母、数字或标点符号，不能少于6位！</td>
                         <td></td></tr>
                         <tr>
                         <td><span class="red">*&nbsp;</span>手机号：</td>
-                        <td><input class="form-control text-controle" type="text" placeholder="请输入手机号"></td>
+                        <td><input class="form-control text-controle" type="text" id="userPhone" placeholder="请输入手机号"></td>
                         <td></td></tr>
                         <tr>
                         <td><span class="red">*&nbsp;</span>职位：</td>
                         <td>
-                            <select class="form-control">
-                                <option>全部</option>
-                                <option>销售</option>
-                                <option>销售经理</option>
-                                <option>销售总监</option>
-                                <option>大区经理</option>
-                                <option>城市总经理</option>
-                                <option>BD</option>
-                                <option>BD总监</option>
-                                <option>BD总裁</option>
+                            <select id="acoSel" class="form-control">
+                                <option value=0>全部</option>
+                                <option value=1>销售</option>
+                                <option value=2>销售经理</option>
+                                <option value=3>销售总监</option>
+                                <option value=4>大区经理</option>
+                                <option value=5>城市总经理</option>
+                                <option value=6>BD</option>
+                                <option value=7>BD总监</option>
+                                <option value=8>BD总裁</option>
                             </select>
                         </td>
                         <td></td></tr>
@@ -132,7 +142,7 @@
                         <td>
                             <div class="control-group">
                                 <div class="date-input controls input-append date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="sel-date" data-link-format="yyyy-mm-dd">
-                                    <input size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
+                                    <input style="width:134px;margin-right: 0px;" size="16" class="form-control"  type="text" value="" id="dtp_input" readonly><label for="dtp_input"  class="add-on control-week"></label><span class="add-on"><i class="fa fa-calendar"></i></span></input>                                
                                 </div>
                                 <input type="hidden" id="cp-date2" value="" />                           
                             </div>
@@ -148,9 +158,10 @@
         </div>
     </div>
 <script src="../js/jquery-3.2.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
 <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 <script src="../js/default.js"></script>
+<script src="js/userManage-input.js"></script>
 </body>
 </html>

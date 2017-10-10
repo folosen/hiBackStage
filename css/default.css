@@ -162,8 +162,8 @@ header{
     color:#4fb7c7;
     cursor: pointer;
 }
-#content-box .centent-hander-nav .fa-angle-right:before{
-  margin:0px;  
+#content-box .centent-hander-nav .fa-angle-right:before,#content-box .centent-hander-nav .fa-angle-left:before{
+  margin:0px;
 }
 #content-box .centent-box{
     width:100%;
@@ -203,4 +203,18 @@ header{
 }
 .footer .blue{
     color: #4fb7c7;
+}
+#content-box .first-ul{
+    margin-left:15px;
+    display: none;
+}
+#content-box .first-ul a{
+    font-size: 14px;
+}
+#content-box .secend-ul a{
+    font-size: 12px;
+}
+#content-box .secend-ul{
+    margin-left:25px;
+    margin-bottom: 10px;
 }

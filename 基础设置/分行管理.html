@@ -77,24 +77,61 @@
             <a href="#">首页<i class="fa fa-angle-right"></i></a><a href="#">基础设置<i class="fa fa-angle-right"></i></a>分行管理
         </div>
         <div class="centent-box">
-            <div class="centent-box-hander">
-                <form class="form-horizontal" role="form">
-                    <div class="control-group">
-                        <label for="group-bank">银行名称</label>
-                        <select class="form-control only-select" id="group-bank">
-                            <option>中国银行</option>
-                        </select>                    
-                    </div>
-                    <div class="control-group">
-                        <label for="group-bank-b">分行名称</label>
-                        <input type="text" class="form-control" id="group-bank-b" placeholder="">                    
-                    </div>
-                </form>
-                <button class="btn btn-default btn-left">查询</button>
-                <button class="btn btn-default btn-left blue-btn">录入</button>
-                <button class="btn btn-default">导出</button>
-                <button class="btn btn-default  blue-btn">新增入库</button>  
-            </div>
+            <div class="section-nav">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li class="divider"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">银行活动<i class="fa fa-angle-right"></i></a>
+                    <ul class="first-ul">
+                        <li></li>
+                            <a href="#">生活分期管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">生活分期档案录入</a></li>
+                            <li><a href="#">生活分期档案核对</a></li>
+                            <li><a href="#">生活分期档案审批</a></li>
+                            <li><a href="#">生活分期详情</a></li>
+                            <li><a href="#">查看合作商家</a></li>
+                            <li><a href="#">用户分期查询</a></li>
+                            <li><a href="#">生活分期订单管理</a></li>
+                            </ul>                            
+                        </li>
+                        <li></li>
+                            <a href="#">银行供应商管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">添加信用卡供应商</a></li>
+                            <li><a href="#">信用卡供应商核对</a></li>
+                            <li><a href="#">信用卡供应商审批</a></li>
+                            <li><a href="#">信用卡供应商详情</a></li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">通用配置<i class="fa fa-angle-right"></i></a>
+                    <ul class="first-ul">
+                        <li></li>
+                            <a href="#">员工管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">员工管理</a></li>
+                            <li><a href="#">角色管理</a></li>
+                            <li><a href="#">权限管理</a></li>
+                            </ul>                            
+                        </li>
+                        <li></li>
+                            <a href="#">银行管理</a>                            
+                            <ul class="secend-ul">
+                            <li><a href="#">行业档案</a></li>
+                            <li><a href="#">分行管理</a></li>
+                            <li><a href="#">支行管理</a></li>
+                            </ul>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+            </ul>
+        </div>
             <div class="content">
                 <table class="table table-bordered">
                     <thead>
@@ -179,7 +216,7 @@
         </div>
     </div>
 <script src="../js/jquery-3.2.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
 <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 <script src="../js/default.js"></script>

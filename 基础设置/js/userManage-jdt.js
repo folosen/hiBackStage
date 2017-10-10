@@ -96,3 +96,16 @@ $(".table-condensed input[type='checkbox']").click(function(){
         $('#all-ckeck').prop("checked", false);
     }             
 });
+$(".blue-btn").click(function(){
+    if($("#job").length!=0){
+        if($("#job").val().length==0){
+            alert("请输入职位名称");
+            $("#job")[0].focus();
+            return false;
+        }
+    }
+    if($('.table-condensed tr:gt(0):lt(19) input:checked').length==0){
+        alert("请选择权限");
+        return false;
+    }
+});

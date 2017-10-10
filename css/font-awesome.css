@@ -906,11 +906,12 @@
   content: "\f103";
 }
 .fa-angle-left:before {
-  content: "\f104";
+  margin-left:10px;
+  content: "\f106";
 }
 .fa-angle-right:before {
   margin-left:10px;
-  content: "\f105";
+  content: "\f107";
 }
 .fa-angle-up:before {
   content: "\f106";
